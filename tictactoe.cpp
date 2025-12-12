@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 #include "functions.h"
 
@@ -8,18 +9,28 @@ int main(){
     cout << "There are 5 different genres of questions: English, History, Coding(C++), Science, and Pop Culture." << endl;
     cout << "The computer will randomize the genre each turn." << endl;
     cout << "Starting Board" << endl;
-    printBoard();
-do{
-    askQuestion();
-    checkAnswer();
+    createBoard(); //initalize board with dashes
+    printBoard(); //print the board
+
+do { //do while
+    askQuestion(); //ask question, randomize genre, randomize number for question, print question and answers
+    checkAnswer(); //
     if (checkAnswer()==1){
     placeMark();
-}
-
-
-
-}
+    }
+    do{
+    string cont;  
+        cout<< "Do you want to continue? \n[Y/N]"<<endl;
+        cin>> cont;
+        };
+    while (cont != "Y"||"N")
+    if (cont == "N"){
+        break;
+    else if (cont == )
+    }
+    }
+  
+ 
     return 0;
 }  
-
 
