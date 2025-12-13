@@ -1,8 +1,8 @@
-#include <iostream>
+   #include <iostream>
 #include <string>
 using namespace std;
 #include "functions.h"
-
+ 
 int main(){
     cout << "Welcome to Trivia-Tac-Toe." << endl;
     cout << "In this Tic-Tac-Toe game, you'll have to answer a question correctly."<< endl;
