@@ -71,7 +71,7 @@ static string codingques[5][6]={
 {"Which of the following operators hasd the highest precedence?", "A. !", "B. *", "C. %", "D. =", "A"},
 {"To use the predefined function fmod, the program must include the header file ___.", "A. <cctype>", "B. <iostream>", "C. <cmath>", "D. <cstdlib>", "C"},
 {"The output of the staements: cout<<pow(2.0,pow(3.0,1.0)); is ____.", "A. 6.0", "B. 7.0", "C. 8.0", "D. 9.0", "C"},
-{"Which executed first in a do...while loop?", "A. The body of the loop", "B. The increment statement", "C. The condition statement", "D. ", "A"}};
+{"Which executed first in a do...while loop?", "A. The body of the loop", "B. The increment statement", "C. the evaluation of the expression controlling the loop", "D.the update statement", "A"}};
 int randNum =  rand() % 5; //should generate a random number between 0 and 4
 return codingques[randNum]; //return the whole row of randNum
 };
