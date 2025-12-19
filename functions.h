@@ -11,10 +11,10 @@ void createBoard(){
         for (int j = 0; j<3; j++){//inner loop for columns
             board[i][j]='-'; //fills the board with dashes, indicating there is no mark
         }
-        cout << endl; //ends each row with a new line
+        cout << endl;
     }
 }
-void printBoard(){//this function prinnts the board using nested for loops and a 2d array
+void printBoard(){//this function prints the board using nested for loops and a 2d array
      //declare board char array with 3x3
     cout << "  0 1 2" << endl; //shows index of columns
     for (int i = 0; i < 3; i++){//outer loop for rows
@@ -145,5 +145,6 @@ bool checkFull(){
     }
     return full;
 }
+
 
 

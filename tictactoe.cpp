@@ -19,7 +19,7 @@ int main(){
     cin >> name >> mark; //stores the input in name and mark
     u1.setData(name, mark); //sets data for user 1/player 1
     if (mark == 'X'){ //if u1, chose X
-        mark == 'O'; // mark will be assigned O for user 2 to use
+        mark = 'O'; // mark will be assigned O for user 2 to use
     } else { //and vis versa
         mark = 'X';
     }
@@ -30,7 +30,7 @@ int main(){
     cout << u1.getName() << " and " << u2.getName() <<", in this Tic-Tac-Toe game, you'll have to answer a question correctly."<< endl;
     cout << "There are 5 different genres of questions: English, History, Coding, Science, and Pop Culture." << endl;
     cout << "The computer will randomize the genre each turn." << endl;
-    cout << "Starting Board: " << endl;
+    cout << "Starting Board: " ;
     createBoard(); //initalize board with dashes
     printBoard(); //print the board
     bool game = false; //loop controller
